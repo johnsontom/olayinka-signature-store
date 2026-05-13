@@ -17,7 +17,7 @@ export const metadata = {
   description: "Luxury Wigs & Hair",
 
   icons: {
-    icon: "/logo.png",
+    icon: "public/logo.png",
   },
 }
 
