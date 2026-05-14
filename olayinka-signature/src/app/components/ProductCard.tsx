@@ -1,3 +1,7 @@
+import { useState } from "react"
+return (
+  const [showImage, setShowImage] =
+  useState(false)
 type ProductCardProps = {
   name: string
   price: string
@@ -20,7 +24,10 @@ export default function ProductCard({
   return (
     <div className="group bg-white/70 backdrop-blur-xl border border-pink-100 rounded-[2rem] overflow-hidden shadow-xl hover:-translate-y-3 transition duration-500">
 
-      <div className="relative overflow-hidden">
+      <div
+  className="overflow-hidden cursor-pointer"
+  onClick={() => setShowImage(true)}
+>
 
         {featured && (
           <div className="absolute top-4 left-4 z-10 bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-xl">
@@ -94,6 +101,18 @@ Please I would like to order.`
           </button>
         )}
       </div>
+            {showImage && (
+        <div
+          onClick={() => setShowImage(false)}
+          className="fixed inset-0 bg-black/90 z-[999] flex items-center justify-center p-6"
+        >
+          <img
+            src={image}
+            alt={name}
+            className="max-h-[90vh] max-w-[90vw] rounded-3xl object-contain"
+          />
+        </div>
+      )}
     </div>
   )
 }
