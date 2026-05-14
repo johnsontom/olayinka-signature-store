@@ -21,9 +21,7 @@ export const metadata = {
 
   description: "Luxury Wigs & Hair",
 
-  icons: {
-    icon: "/logo.png",
-  },
+  
 }
 
 export default function RootLayout({
