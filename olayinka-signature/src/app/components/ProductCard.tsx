@@ -1,7 +1,6 @@
 import { useState } from "react"
-return (
-  const [showImage, setShowImage] =
-  useState(false)
+
+  
 type ProductCardProps = {
   name: string
   price: string
@@ -21,6 +20,9 @@ export default function ProductCard({
   inStock = true,
   featured = false,
 }: ProductCardProps) {
+  
+  const [showImage, setShowImage] =
+  useState(false)
   return (
     <div className="group bg-white/70 backdrop-blur-xl border border-pink-100 rounded-[2rem] overflow-hidden shadow-xl hover:-translate-y-3 transition duration-500">
 
