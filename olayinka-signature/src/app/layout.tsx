@@ -13,7 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  verification: {
+    google: "vCUvYhk0pqJsCMSeW5EJ_k_xg2FOubATASIRV4_YHC0",
+  },
+
   title: "Olayinka Signature",
+
   description: "Luxury Wigs & Hair",
 
   icons: {
