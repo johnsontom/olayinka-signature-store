@@ -194,6 +194,10 @@ export default function HomePage() {
   WhatsApp
 </a>
           </div>
+          <p className="text-pink-100 text-sm mt-10 md:mt-0">
+            &copy; {new Date().getFullYear()} Created By JHNXN. All rights
+            reserved.
+          </p>
         </div>
       </footer>
     </main>
